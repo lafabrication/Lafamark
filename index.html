@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,42 +12,33 @@
 
 <header>
 <h1>LFMarketPlace</h1>
-<p>Mampifandray ny mpamokatra, mpanjifa ary mpamatsy</p>
+<p>Mampifandray mpamokatra, mpamatsy ary mpanjifa</p>
 </header>
 
-<nav>
-<a href="#">Accueil</a>
-<a href="#">Produits</a>
-<a href="#">Vendre</a>
-<a href="#">Contact</a>
-</nav>
+<section class="login" id="loginBox">
+<h2>Connexion</h2>
+<input type="text" id="username" placeholder="Nom utilisateur">
+<button onclick="login()">Entrer</button>
+</section>
 
-<section class="produits">
+<section class="market" id="marketBox">
 
-<div class="card">
-<h3>Vary</h3>
-<p>Produit Madagascar</p>
-<button onclick="acheter()">Acheter</button>
-</div>
+<h2>Publier produit</h2>
 
-<div class="card">
-<h3>Légumes</h3>
-<p>Produit frais</p>
-<button onclick="acheter()">Acheter</button>
-</div>
+<input type="text" id="produit" placeholder="Nom produit">
+<input type="number" id="prix" placeholder="Prix">
+<input type="text" id="image" placeholder="Lien image">
+<textarea id="description" placeholder="Description"></textarea>
 
-<div class="card">
-<h3>Fruits</h3>
-<p>Direct producteur</p>
-<button onclick="acheter()">Acheter</button>
-</div>
+<button onclick="publier()">Publier</button>
+
+<h2>Marketplace</h2>
+
+<div id="liste"></div>
 
 </section>
 
-<footer>
-<p>LFMarketPlace Madagascar</p>
-</footer>
-
 <script src="script.js"></script>
+
 </body>
 </html>
